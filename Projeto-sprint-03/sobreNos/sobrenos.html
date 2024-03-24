@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <link href="sobrenos.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAepqvo8bPfENNhjG1y-QnYqPDNPeYf2bk"></script> -->
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAepqvo8bPfENNhjG1y-QnYqPDNPeYf2bk&callback=console.debug&libraries=maps,marker&v=beta">
+        </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #AAD1D0;
+            /* Cor de fundo */
+            color: #333;
+            /* position: relative; */
+            /* Adicionando posição relativa */
+        }
+
+        /* Adicionando círculos brancos nas laterais superiores */
+        body::before,
+        body::after {
+            content: '';
+            /* position: absolute; */
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #fff;
+            top: -50px;
+            /* Posicionamento na parte superior */
+        }
+
+        body::before {
+            left: -50px;
+            /* Posicionamento no lado esquerdo */
+        }
+
+        body::after {
+            right: -50px;
+            /* Posicionamento no lado direito */
+        }
+
+        .center {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5px 20px;
+            position: relative;
+            /* Adicionando posição relativa */
+            z-index: 1;
+            /* Adicionando z-index para manter a sobreposição sobre os círculos */
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .gallery img {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        /* .description, */
+        .address {
+              display: flex;
+             flex-direction: row;
+            align-items: flex-start;
+
+        }
+
+        .description h2,
+        .address h2 {
+            color: #246863;
+            /* Nova cor para o título */
+            font-family: 'More Sugar', cursive;
+            /* Adicionando a fonte para os títulos */
+        }
+
+        footer {
+            background-color: #333;
+            color: #008B8B;
+            text-align: center;
+            padding: 20px 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body onload="initMap()">
+<header>
+    <div class="center">
+        <div class="logo"><img src="../assets/logo.png">
+
+        </div><!--logo-->
+        <div class="menu"> <!--menu-->
+            <a href="../home/index.html">Inicio</a><!--colocar o arq html na #-->
+            <a href="sobrenos.html">Sobre Nós</a>
+            <a href="#">Serviços</a>
+            <a href="#">Fale Conosco</a>
+        </div><!--center-->
+</header>
+
+    <section class="sobre">
+        <div class="center">
+            <div class="gallery">
+                <img src="../assets/clinica.jpeg">
+                <img src="../assets/lab.jpega">
+                <img src="../assets/cirGerais.jpeg">
+                <!-- <img src="images/image4.jpg">
+                <img src="images/image5.jpg">
+                <img src="images/image6.jpg"> -->
+            </div>
+            <div class="description" style="margin-top: -100px; text-justify: auto; padding-top: 5%;" >
+                <h2 style="font-size: 32px;">Quem Somos</h2>
+                <p style="color: #035353; font-size: 18px; text-align: justify; margin-bottom: 30px;">Nosso foco principal é a saúde dos animais, oferecendo serviços de alta qualidade para garantir seu bem-estar.
+                Preocupamo-nos também em atender às necessidades de todos os clientes, incluindo aqueles com deficiência física.
+                <br>
+                Para garantir acessibilidade, possuímos uma entrada acessível para cadeiras de rodas e um banheiro adaptado, com barras
+                de apoio e espaço adequado.
+                <br>
+                Somos altamente recomendados pelos nossos clientes, com uma avaliação média de 5 de 5, baseada em 73 avaliações,
+            </div>
+            <div class="address">
+                <div>
+                <h2 >Rua Dona Antônia, 1098</h2>
+                <p style="color: #035353;">Vila das Palmeiras<br>
+                    Guarulhos<br>
+                    São Paulo<br>
+                    CEP: 07022-00<br>
+                    Telefone: (11) 96437-9922
+                    E-mail: asa.contato1@gmail.com
+                </p>
+            </div>
+                <div id="map" /> 
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
