@@ -1,0 +1,83 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #DCDCDC, #ADD8E6);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  height: 200px;
+  padding: 20px 0;
+}
+
+.logo {
+  width: 1000px;
+  text-align: left;
+}
+
+.logo img {
+  width: 125px;
+  height: auto;
+
+}
+
+.logo p {
+  margin-left: 33px;
+  color: black;
+  text-align: start;
+  font-weight: bold;
+  margin-right: 120px;
+
+}
+
+.menu {
+  margin-top: 15px;
+  width: 100%;
+  text-align: right;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+a {
+  color: #008B8B;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: none;
+  transition: 0.3s ease;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.menu a:hover {
+  background-color: #5F9EA0;
+}
+
+.center {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px 20px;
+  position: relative;
+  /* Adicionando posição relativa */
+  z-index: 1;
+  /* Adicionando z-index para manter a sobreposição sobre os círculos */
+}
+
+footer {
+  background-color: #333;
+  color: #008B8B;
+  text-align: center;
+  padding: 20px 0;
+  position: static;
+  bottom: 0;
+  width: 100%;
+}

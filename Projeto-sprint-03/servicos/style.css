@@ -1,0 +1,30 @@
+body footer{
+  position: fixed
+}
+
+main {display: flex;flex-direction: column;width: 80%;margin: 25px auto;}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.servico {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servico h1{
+  color: #246863;
+  font-family: 'More Sugar', cursive;
+  text-align: center;
+}
+
+.servico p{
+  color: #035353; 
+  font-size: 18px; 
+  margin:0
+}
