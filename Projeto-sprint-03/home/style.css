@@ -14,9 +14,7 @@
 
 }
 
-html
-body {
-  height: 100%;
+html, body {
   overflow-y: hidden;
   overflow-x: hidden;
 
@@ -89,7 +87,7 @@ section.sobre {
 
 .extras {
   position: absolute;
-  bottom: -450;
+  top: -100px;
   right: -500px;
   width: 1000px;
   height: 1000px;
@@ -115,11 +113,15 @@ section.sobre {
 }
 
 .infTitulo{
+  margin-bottom: 20px;
+}
+
+.infTitulo span{
   color: #035353;
- font-family: "More Sugar", cursive;
+  font-family: "More Sugar", cursive;
   font-size: 25px;
   font-weight: bold;
-  margin-bottom: 20px;
+
 }
 
 .infGerais p{
