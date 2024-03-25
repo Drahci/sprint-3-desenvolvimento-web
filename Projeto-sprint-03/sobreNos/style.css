@@ -55,10 +55,20 @@ body::after {
 
 }
 
-.description h2,
-.address h2 {
+.description{
+    margin-bottom: 30px;
+}
+
+.description h2, .address h2 {
     color: #246863;
     /* Nova cor para o título */
     font-family: 'More Sugar', cursive;
     /* Adicionando a fonte para os títulos */
+}
+
+.description p{
+    color: #035353; 
+    font-size: 18px; 
+    text-align: justify; 
+    margin: 0;
 }

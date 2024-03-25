@@ -45,6 +45,7 @@ header {
   display: flex;
   flex-flow: row;
   justify-content: space-evenly;
+  font-size: 20px;
 }
 
 a {
