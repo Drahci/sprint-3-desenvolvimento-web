@@ -1,8 +1,9 @@
-body footer{
-  position: fixed
+main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 25px auto;
 }
-
-main {display: flex;flex-direction: column;width: 80%;margin: 25px auto;}
 
 .row {
   display: flex;
