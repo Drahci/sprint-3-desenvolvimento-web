@@ -1,83 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Verdana, Tahoma, sans-serif;
-}
-
-.center {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 2%;
-
-}
-
-html, body {
-  overflow-y: hidden;
-  overflow-x: hidden;
-
-}
 
 body{
-  background-color: #DCDCDC;
-  background-image: linear-gradient(to bottom, #DCDCDC, #ADD8E6);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  
-}
-
-footer {
-  background-color: #333;
-  color: #008B8B;
-  text-align: center;
-  padding: 20px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-header {
-  height: 200px;
-  padding: 20px 0;
-}
-
-.logo {
-  width: 1000px;
-  text-align: left;
-}
-
-.logo img{
-  width: 125px;
-  height: auto;
-
-}
-
-.menu {
-  margin-top: 15px;
-  margin-left: 150px;
-  width: 100%;
-  text-align: right;
-
-}
-
-.menu,
-a {
-  color: #008B8B;
-  text-decoration: none;
-  font-weight: bold;
-  margin-right: 120px;
-  background-color: none;
-  transition: 0.3s ease;
-  padding: 10px;
-  border-radius: 30px;
-
-}
-
-.menu a:hover{
-  background-color: #5F9EA0;
+  overflow: hidden;
 }
 
 section.sobre {
@@ -88,7 +11,7 @@ section.sobre {
 .extras {
   position: absolute;
   top: -100px;
-  right: -500px;
+  right: -600px;
   width: 1000px;
   height: 1000px;
   border-radius: 50%;
@@ -101,13 +24,10 @@ section.sobre {
 
 .infGerais{
   border-radius: 75px;
-  margin-top: 125px;
-  margin-left: 455px;
-  margin-right: 525px;
+  margin: 0 auto;
+  width:50%;
   background-color: #95b4b8;
   padding: 50px;
-  padding-top: 55px;
-  padding-bottom: 95px;
   text-align: center;
   opacity: 0.8;
 }
@@ -131,6 +51,7 @@ section.sobre {
   line-height: 1.5;
   text-align: justify;
 }
+
 @media (min-width: 768px) {
   .extras {
     display: block;

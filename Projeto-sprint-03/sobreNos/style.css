@@ -1,12 +1,4 @@
 body {
-    background-color: #AAD1D0;
-    background-image: linear-gradient(to bottom, #DCDCDC, #ADD8E6);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     color: #333;
 }
 
@@ -33,88 +25,14 @@ body::after {
     /* Posicionamento no lado direito */
 }
 
-header {
-    height: 200px;
-    padding: 20px 0;
-}
-
-.logo {
-    width: 1000px;
-    text-align: left;
-}
-
-.logo img {
-    width: 125px;
-    height: auto;
-
-}
-#map {
-    height: 300px;
-    width: 100%;
-}
-.logo p {
-    margin-left: 33px;
-    color: black;
-    text-align: start;
-    font-weight: bold;
-    margin-right: 120px;
-
-}
-
-.menu {
-    margin-top: 15px;
-    margin-left: -120px;
-    width: 100%;
-    text-align: right;
-
-}
-
-.menu,
-a {
-    color: #008B8B;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 120px;
-    background-color: none;
-    transition: 0.3s ease;
-    padding: 10px;
-    border-radius: 30px;
-
-}
-
-.menu a:hover {
-    background-color: #5F9EA0;
-}
  section.sobre {
     position: relative;
     height: calc(100% - 200px);
 }
 
-
-.extras img {
-    opacity: 0.7;
-}
-
-@media (min-width: 768px) {
-    .extras {
-        display: block;
-    }
-}
-
-@media (max-width: 768px) {
-    .extras {
-        display: none;
-    }
-}
-
-.center {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 5px 20px;
-    position: relative;
-    /* Adicionando posição relativa */
-    z-index: 1;
-    /* Adicionando z-index para manter a sobreposição sobre os círculos */
+#map {
+    height: 300px;
+    width: 100%;
 }
 
 .gallery {
@@ -137,19 +55,20 @@ a {
 
 }
 
-.description h2,
-.address h2 {
+.description{
+    margin-bottom: 30px;
+}
+
+.description h2, .address h2 {
     color: #246863;
     /* Nova cor para o título */
     font-family: 'More Sugar', cursive;
     /* Adicionando a fonte para os títulos */
 }
 
-footer {
-    background-color: #333;
-    color: #008B8B;
-    text-align: center;
-    padding: 20px 0;
-    bottom: 0;
-    width: 100%;
+.description p{
+    color: #035353; 
+    font-size: 18px; 
+    text-align: justify; 
+    margin: 0;
 }
