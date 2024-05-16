@@ -24,10 +24,13 @@
   <main>
     <div class="column">
       <h2>Nos envie sua mensagem!</h2>
-      <form>
-        <input type="text" placeholder="Nome" />
-        <input type="text" placeholder="Assunto" />
-        <textarea type="text" placeholder="Mais detalhes" style="height:100px;"></textarea>
+      <form id="myForm">
+        <input type="text" id="nome" placeholder="Nome" />
+        <div id="nomeError" class="error"></div>
+        <input type="text" id="assunto" placeholder="Assunto" />
+        <div id="assuntoError" class="error"></div>
+        <textarea id="detalhes" placeholder="Mais detalhes" style="height:100px;"></textarea>
+        <div id="detalhesError" class="error"></div>
         <input type="submit" value="Enviar" />
       </form>
     </div>
@@ -65,7 +68,7 @@
   <footer class="absolute">
     <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
   </footer>
-  <script src="script.js"></script>
+  <script src="form.js" src="script.js"></script>
 </body>
 
 </html>
