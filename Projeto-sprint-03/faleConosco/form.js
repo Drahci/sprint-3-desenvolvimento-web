@@ -19,11 +19,10 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
       assuntoError.textContent = "Por favor, preencha o campo Assunto.";
       isValid = false;
     }
-    if (detalhes === "" || detalhes.trim() === ' ') {
+    if (detalhes === "" || detalhes === ' ') {
       detalhesError.textContent = "Por favor, preencha o campo Mais detalhes.";
       isValid = false;
     }
-
     if (!isValid) {
       event.preventDefault(); 
     }
