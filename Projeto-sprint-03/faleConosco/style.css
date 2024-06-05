@@ -50,3 +50,11 @@ li a{
   margin-top: 5px auto;
   cursor: pointer;
 }
+
+.error{
+  color:red;
+}
+
+.success{
+  color:rgb(0, 161, 0)
+}

@@ -1,0 +1,94 @@
+
+body{
+  overflow: hidden;
+}
+
+section.sobre {
+  position: relative;
+  height: calc(100% - 200px);
+}
+
+.extras {
+  position: absolute;
+  top: -100px;
+  right: -600px;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  background-color: #0baca7;
+  opacity: 0.8;
+}
+.extras img{
+  opacity: 0.7;
+}
+
+.infGerais{
+  border-radius: 75px;
+  margin: 0 auto;
+  width:50%;
+  background-color: #95b4b8;
+  padding: 50px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.infTitulo{
+  margin-bottom: 20px;
+}
+
+.infTitulo span{
+  color: #035353;
+  font-family: "More Sugar", cursive;
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.infGerais p{
+  color: #035353;
+  font-family: "More sugar", cursive;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .extras {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .extras {
+    display: none;
+  }
+}
+
+td.name {
+  width: 20%;
+}
+
+table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+tr {
+  height: 20px;
+}
+
+td{
+  margin: 0;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+td.subject {
+  width: 20%;
+}
+
+td.title {
+  font-weight: 700;
+  font-size: 24px
+}

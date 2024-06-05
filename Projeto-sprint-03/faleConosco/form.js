@@ -1,16 +1,17 @@
-document.getElementById("myForm").addEventListener("submit", function(event) {
-    var nome = document.getElementById("nome").value.trim();
-    var assunto = document.getElementById("assunto").value.trim();
-    var detalhes = document.getElementById("detalhes").value.trim();
-    var nomeError = document.getElementById("nomeError");
-    var assuntoError = document.getElementById("assuntoError");
-    var detalhesError = document.getElementById("detalhesError");
-    var isValid = true;
-
+window.onload=()=>{
+  document.getElementById("myForm").addEventListener("submit", function(event) {
+    const nome = document.getElementById("nome").value.trim();
+    const assunto = document.getElementById("assunto").value.trim();
+    const detalhes = document.getElementById("detalhes").value.trim();
+    const nomeError = document.getElementById("nomeError");
+    const assuntoError = document.getElementById("assuntoError");
+    const detalhesError = document.getElementById("detalhesError");
+    event.preventDefault();
+    let isValid = true;
     nomeError.textContent = "";
     assuntoError.textContent = "";
     detalhesError.textContent = "";
-
+  
     if (nome === "" || nome === ' ') {
       nomeError.textContent = "Por favor, preencha o campo Nome.";
       isValid = false;
@@ -23,7 +24,21 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
       detalhesError.textContent = "Por favor, preencha o campo Mais detalhes.";
       isValid = false;
     }
-    if (!isValid) {
-      event.preventDefault(); 
+
+    if(isValid){
+      let xhttp = new XMLHttpRequest();
+      xhttp.onloadend = ()=> {
+        if(xhttp.status === 200 && xhttp.readyState === 4){
+          document.getElementById('submitFeedback').innerHTML = "Mensagem enviada!";
+          document.getElementById('submitFeedback').className = "success"
+        }else{
+          document.getElementById('submitFeedback').innerHTML = "Ocorreu um erro ao enviar sua mensagem, tente novamente mais tarde!";
+          document.getElementById('submitFeedback').className = "error"
+        }
+      }
+      xhttp.open("POST", "../api/insert.php", true);
+      xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhttp.send("name="+nome+"&subject="+assunto+"&details="+detalhes)
     }
   });
+}
