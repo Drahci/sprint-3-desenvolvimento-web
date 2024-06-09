@@ -36,7 +36,7 @@ window.onload=()=>{
           document.getElementById('submitFeedback').className = "error"
         }
       }
-      xhttp.open("POST", "../api/insert.php", true);
+      xhttp.open("POST", "http://localhost:8080/api/insert.jsp", true);
       xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
       xhttp.send("name="+nome+"&subject="+assunto+"&details="+detalhes)
     }

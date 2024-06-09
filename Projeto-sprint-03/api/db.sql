@@ -1,3 +1,6 @@
+CREATE DATABASE veterinaria;
+USE veterinaria;
+
 CREATE TABLE Contatos(
   id int AUTO_INCREMENT PRIMARY KEY,
   nome varchar(30),
